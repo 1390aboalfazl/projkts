@@ -1,4 +1,5 @@
 from mymaudol import *
+from os import *
 
 def rane():
     print('hi wilcom to bls trmenal help is --helpp')
