@@ -1,3 +1,4 @@
+#yor app
 def patrec(pro1,pro2,pro3,pro4):
     pro1=pro1
     pro2=pro2

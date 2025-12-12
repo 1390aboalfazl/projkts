@@ -11,8 +11,13 @@ def login(emal):
     iglo = open('devisesclonlogin.iur','a')
     iglo.write(emal)
 
-#def testlogin(emal):
-#    iglo = open('devisesclonlogin.iur','a')
+def testlogin(emal):
+    iglo = open('devisesclonlogin.iur','r')
+    a=iglo.readline()
+    if a == emal:
+        print('on login')
+    else:
+        print('not login')
 
 def add_fili(name_file_adres):
     iglo = open(name_file_adres,'x')
@@ -25,4 +30,9 @@ def defalt_mode():
     moding = 'ifo'
     
 def install_mod(name_mode):
-    pass
+    install_addvans(name_mode)
+from modal.advans import *
+def patrik(pro1,pro2,pro3,pro4):
+    patrec(pro1,pro2,pro3,pro4)
+def text(name):
+    textors(name)
