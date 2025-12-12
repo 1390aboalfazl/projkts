@@ -26,3 +26,25 @@ def patrec(pro1,pro2,pro3,pro4):
             open(pro4,'a').write(data)
     else:
         print('ok')
+
+def textors(name_adrs):
+    iglo = open(name_adrs,'r')
+    lop = iglo.read
+    print(lop)
+    while True:
+        lo = input(': ')
+        if lo == '-radd':
+            iglo = open(name_adrs,'w')
+            text = input('txt:\n')
+            iglo.write(text)
+        elif lo == '-add':
+            iglo = open(name_adrs,'a')
+            text = input('txt:\n')
+            iglo.write(text)
+        elif lo == '-r':
+            iglo = open(name_adrs,'w')
+            iglo.write('')
+        elif lo == 'exit':
+            break
+        else:
+            print('not fond')
