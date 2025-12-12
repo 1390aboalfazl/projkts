@@ -27,10 +27,9 @@ def patrec(pro1,pro2,pro3,pro4):
     else:
         print('ok')
 
-def textors(name_adrs):
+def textors(name_adrs=str):
     iglo = open(name_adrs,'r')
-    lop = iglo.read
-    print(lop)
+    print(iglo.readline())
     while True:
         lo = input(': ')
         if lo == '-radd':
