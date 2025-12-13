@@ -21,9 +21,5 @@ while True:
     elif lod == '-installmods':
         n = input('mods: ')
         install_mod(n)
-    elif lod == '-patrick':
-        n1 = input("f1: ")
-        n2 = input("f2: ")
-        n3 = input("f3: ")
-        n4 = input("f4: ")
-        patrik(n1,n2,n3,n4)
+    elif lod == 'exit':
+        break

@@ -1,4 +1,5 @@
 from modal.advans import *
+from time import *
 
 def install_addvans(name):
     if name == 'advans':
@@ -14,6 +15,7 @@ def install_addvans(name):
             lop.write('def text(name):')
             lop.write('\n')
             lop.write('    textors(name)')
+            print('lod ing data danlods')
             lop.write('\n')
             lod = open('bls.py','a')
             lod.write('\n')
@@ -23,5 +25,9 @@ def install_addvans(name):
             lod.write('        n3 = input("f3: ")'+'\n')
             lod.write('        n4 = input("f4: ")'+'\n')
             lod.write('        patrik(n1,n2,n3,n4)'+'\n')
+            lod.write('    elif lod =='+"'-textor':"+'\n')
+            lod.write('        n = input("name fil: ")'+'\n')
+            lod.write('        text(n)')
+            print('finesh....')
         else:
             print('ok!')
