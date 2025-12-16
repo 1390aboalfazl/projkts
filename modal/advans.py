@@ -8,25 +8,27 @@ def patrec(pro1,pro2,pro3,pro4):
     open(pro2,'a').write('glo2:\n')
     open(pro3,'a').write('glo3:\n')
     open(pro4,'a').write('glo4:\n')
-    w = input('wris add data host[y/n]?')
-    if w=='y':
-        data = input('data:\n')
-        e = input('watis fil: ')
-        if e==pro1:
-            open(e,'a').write(data)
-        elif e==pro2:
-            open(e,'a').write(data)
-        elif e==pro3:
-            open(e,'a').write(data)
-        elif e==pro4:
-            open(e,'a').write(data)
-        elif e=='':
-            open(pro1,'a').write(data)
-            open(pro2,'a').write(data)
-            open(pro3,'a').write(data)
-            open(pro4,'a').write(data)
-    else:
-        print('ok')
+    while True:
+        w = input('wris add data host[y/n]?')
+        if w=='y':
+            data = input('data:\n')
+            e = input('watis fil: ')
+            if e==pro1:
+                open(e,'a').write(data)
+            elif e==pro2:
+                open(e,'a').write(data)
+            elif e==pro3:
+                open(e,'a').write(data)
+            elif e==pro4:
+                open(e,'a').write(data)
+            elif e=='':
+                open(pro1,'a').write(data)
+                open(pro2,'a').write(data)
+                open(pro3,'a').write(data)
+                open(pro4,'a').write(data)
+        else:
+            break
+            print('ok')
 
 def textors(name_adrs=str):
     iglo = open(name_adrs,'r')

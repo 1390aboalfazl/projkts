@@ -31,3 +31,10 @@ def defalt_mode():
     
 def install_mod(name_mode):
     install_addvans(name_mode)
+
+def blo_print(data):
+    print(data)
+
+def blo_add(namefil,data):
+    iglo = open(namefil,'a')
+    iglo.write(data)

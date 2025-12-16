@@ -23,3 +23,10 @@ while True:
         install_mod(n)
     elif lod == 'exit':
         break
+    elif lod == '-blo print':
+        mol = input(':')
+        blo_print(mol)
+    elif lod == '-blo -add':
+        n = input('name: ')
+        d = input('data:')
+        blo_add(n,d)
