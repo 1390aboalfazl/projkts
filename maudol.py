@@ -2,10 +2,10 @@ from mymaudol import *
 from os import *
 
 def rane():
-    print('hi wilcom to bls trmenal help is --helpp')
+    print('hi wilcom to bls trmenal help is -helpp')
 
 def helpp(name):
-    print(name+' is login --logi is test login --testlogi')
+    print(name+' is login -logi is test login -testlogi')
 
 def login(emal):
     iglo = open('devisesclonlogin.iur','a')
@@ -38,3 +38,15 @@ def blo_print(data):
 def blo_add(namefil,data):
     iglo = open(namefil,'a')
     iglo.write(data)
+
+def remov_user():
+    iglo = open('devisesclonlogin.iur','w')
+    iglo.write('')
+
+def relod_user(emal):
+    iglo = open('devisesclonlogin.iur','w')
+    iglo.write(emal)
+
+def add_pasvord(passvord):
+    iglo = open('devisesclonlogin.iur','a')
+    iglo.write('\n'+passvord)

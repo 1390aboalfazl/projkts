@@ -6,8 +6,8 @@ while True:
         n = input('name: ')
         helpp(n)
     elif lod == '-login':
-        n = input('emal: ')
-        login(n)
+        e = input('emal: ')
+        login(e)
     elif lod == '-tstlogin':
         n = input('emal: ')
         testlogin(n)
@@ -30,3 +30,11 @@ while True:
         n = input('name: ')
         d = input('data:')
         blo_add(n,d)
+    elif lod == '-user -remov':
+        remov_user()
+    elif lod == '-user -remov':
+        n = input('newu emal: ')
+        relod_user(n)
+    elif lod == '-user -passvord -add':
+        n = input('pasvord: ')
+        add_pasvord(n)
